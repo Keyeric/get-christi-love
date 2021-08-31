@@ -1,22 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+
+
+import Header from "./components/Header";
+import Navigation from "./components/Navigation";
+import Main from "./components/mainPage";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App2">
+      <header className="App-header2">
+        <Header />
+
+        <Navigation />
+        <Main />
+          {/*
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Welcome to Get Christi Love
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        </p> */}
       </header>
     </div>
   );
